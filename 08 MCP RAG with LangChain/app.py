@@ -11,10 +11,10 @@ from mcp.client.stdio import stdio_client
 from langchain_mcp_adapters.tools import load_mcp_tools
 
 # use only when you are using langchain and langgraph v0.3
-from langgraph.prebuilt import create_react_agent as create_agent
+# from langgraph.prebuilt import create_react_agent as create_agent
 
 ## use following agent if you are using langchain v1
-# from langchain.agents import create_agent
+from langchain.agents import create_agent
 
 # Make sure to update to the full absolute path to your server.py file
 server_params = StdioServerParameters(
