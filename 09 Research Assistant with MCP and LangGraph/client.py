@@ -3,7 +3,8 @@ import asyncio
 from typing import List, Annotated
 from typing_extensions import TypedDict
 
-from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
+# from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_ollama import ChatOllama
 from langgraph.prebuilt import tools_condition, ToolNode
 from langgraph.graph import StateGraph, START, END

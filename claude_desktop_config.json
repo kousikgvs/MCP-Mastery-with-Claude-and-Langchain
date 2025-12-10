@@ -115,6 +115,16 @@
 				"http://3.6.90.231:8000/mcp",
 				"--allow-http"
 			]
+		},
+		"research-assistant": {
+			"command": "uvx",
+			"args": [
+				"research-assistant-mcp"
+			],
+			"env": {
+				"OPENAI_API_KEY": "sk-proj-tt7iEqFDl...",
+				"RESEARCH_DB_PATH": "C:\\Users\\laxmi\\Downloads\\test"
+			}
 		}
 	}
 }
