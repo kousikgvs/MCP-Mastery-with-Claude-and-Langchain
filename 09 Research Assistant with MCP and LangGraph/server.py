@@ -82,7 +82,8 @@ def save_research_data(content: List[str], topic: str = "default") -> str:
         
         for text in content:
             content_hash = get_content_hash(text)
-            if content_hash not in existing_hashes:
+            # if content_hash not in existing_hashes:
+            if content_hash not in new_hashes:
                 new_content.append(text)
                 new_hashes.add(content_hash)
         
